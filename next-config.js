@@ -7,5 +7,7 @@ if (typeof require !== 'undefined') {
   require.extensions['.css'] = (file) => {}
 }
 
+
 module.exports = withCss()
 module.exports = withSass()
+module.exports = {target: 'serverless'}

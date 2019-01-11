@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Menu, Icon, Dropdown, Button, message } from 'antd';
+import { Row, Col, Menu, Icon, Dropdown, Button, notification } from "antd";
 import DefaultContent from './InnerContent/DefaultContent';
 import SantosContent from './InnerContent/SantosCotent';
 
@@ -12,8 +12,20 @@ export default class ContentPage extends Component {
     currentPageContent: 'Selecione a Cidade',
   };
 
+  // NOTIFICATION MESSAGE
+  openNotificationWithIcon = (type, message, description) => {
+    notification[type]({
+      message: message,
+      description: description,
+    });
+  };
+
+  // CHANGE STATE OF THE CURRENT CONTENT TO SWITCH PAGES
   handleSelectOnMenu = (e) => {
-    this.setState({ currentPageContent:  e.item.props.value });
+    this.setState({ currentPageContent:  e.item.props.value },() => {
+      this.openNotificationWithIcon("info", "Conteúdo Atualizado", `Você está visualizando o conteudo de ${this.state.currentPageContent}.`);
+    });
+
   }
   
 
