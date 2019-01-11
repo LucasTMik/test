@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import { Row, Col, Menu, Icon, Dropdown, Button, notification } from "antd";
 import DefaultContent from './InnerContent/DefaultContent';
 import SantosContent from './InnerContent/SantosCotent';
+import SaoPauloContent from './InnerContent/SaoPauloContent';
+import RiodeJaneiroContent from './InnerContent/RiodeJaneiroContent';
+import FlorianopolisContent from './InnerContent/FlorianopolisContent';
+import LitoralNorteContent from './InnerContent/LitoralNorteContent';
+import PortoAlegreContent from './InnerContent/PortoAlegreContent';
+import RibeiraoPretoContent from './InnerContent/RibeiraoPretoContent';
+import BeloHorizonteContent from './InnerContent/BeloHorizonteContent';
+
 
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
@@ -34,10 +42,32 @@ export default class ContentPage extends Component {
     switch (this.state.currentPageContent) {
       case 'Santos':
         return <SantosContent/>
+        break;
+      case 'Rio de Janeiro':
+        return <RiodeJaneiroContent/>
+        break;
+      case 'São Paulo':
+        return <SaoPauloContent/>
+        break;
+        case 'Florianópolis':
+        return <FlorianopolisContent/>
         break;    
+        case 'Litoral Norte':
+        return <LitoralNorteContent/>
+        break; 
+        case 'Porto Alegre':
+        return <PortoAlegreContent/>
+        break; 
+        case 'Ribeirão Preto':
+        return <RibeiraoPretoContent/>
+        break; 
+        case 'Belo Horizonte':
+        return <BeloHorizonteContent/>
+        break;
       default:
         return <DefaultContent/>
         break;
+
     }
   }
 
@@ -48,11 +78,26 @@ export default class ContentPage extends Component {
         <Menu.Item key="1" value="Santos">
           Santos
         </Menu.Item>
-        <Menu.Item key="2" value="Bahia">
-          Bahia
+        <Menu.Item key="2" value="Rio de Janeiro">
+          Rio de Janeiro
         </Menu.Item>
         <Menu.Item key="3" value="São Paulo">
           São Paulo
+        </Menu.Item>
+        <Menu.Item key="4" value="Florianópolis">
+          Florianópolis
+        </Menu.Item>
+        <Menu.Item key="5" value="Litoral Norte">
+          Litoral Norte
+        </Menu.Item>
+        <Menu.Item key="6" value="Porto Alegre">
+          Porto Alegre
+        </Menu.Item>
+        <Menu.Item key="7" value="Ribeirão Preto">
+          Ribeirão Preto
+        </Menu.Item>
+        <Menu.Item key="8" value="Belo Horizonte">
+          Belo Horizonte
         </Menu.Item>
       </Menu>
     );
@@ -97,6 +142,13 @@ export default class ContentPage extends Component {
         </div>
 
         <style jsx global>{`
+          @font-face {
+            font-family: 'redvevet';
+            src: url('../static/fonts/red_velvet-webfont.woff2') format('woff2'),
+                url('../static/fonts/red_velvet-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+          }
           .MainMenu {
             display: flex;
             align-items: center;
@@ -109,6 +161,7 @@ export default class ContentPage extends Component {
             left: 50%;
             transform: translateX(-50%);
             z-index: 10;
+            font-family: 'Candara';
           }
           .MainMenu img {
             width: 170px;
@@ -136,6 +189,7 @@ export default class ContentPage extends Component {
           .MainSlider h1 {
             font-size: 100px;
             color: #fff;
+            font-family: 'redvevet';  
           }
           .NavigationMenu {
             width: 70%;
@@ -145,6 +199,7 @@ export default class ContentPage extends Component {
             margin: 0 auto;
             transform: translateY(-20%);
             z-index: 3;
+            font-family: 'Candara';
           }
           .NavigationMenu div{
             display: flex;

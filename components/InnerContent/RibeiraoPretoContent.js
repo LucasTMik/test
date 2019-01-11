@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import { Row, Col, Menu, Icon, Dropdown, Button, message } from 'antd';
 
-export default class SantosContent extends Component {
+export default class RibeiraoPretoContent extends Component {
   render() {
     return (
       <div className="WrapperContent">
         {/*******TITLE AREA**********/}
         <Row>
           <Col lg={24}>
-            <h1 className="Title">Programa Santos</h1>
+            <h1 className="Title">Programa Ribeirão Preto</h1>
           </Col>
         </Row>
         <Row className="ContentSection">
           {/*******LEFT COLUMN**********/}
           <Col lg={12}>
 						<div className="ItemList">
-							<h4>1º Módulo - Jun: 07, 08 e 09</h4>
+							<h4>1º Módulo - Mai: 10, 11 e 12</h4>
 							<h5>Pedro Franco</h5>
 							<ul>
 								<li>Introdução ao Yoga</li>
@@ -30,7 +30,7 @@ export default class SantosContent extends Component {
 						</div>
 
 						<div className="ItemList">
-							<h4>2º Módulo - Jul: 05, 06 e 07</h4>
+							<h4>2º Módulo - Jun: 07, 08 e 09</h4>
 							<h5>Pedro Franco</h5>
 							<ul>
 								<li>Yoga Tântrico</li>
@@ -46,7 +46,7 @@ export default class SantosContent extends Component {
 						</div>
 
 						<div className="ItemList">
-							<h4>3º Módulo - Ago: 16, 17 e 18</h4>
+							<h4>3º Módulo - Jul: 19, 20 e 21</h4>
 							<h5>Teo Balieiro e Re Kerlakhian</h5>
 							<ul>
 								<li>Bhakti Yoga Iniciação a musicalidade - mantras</li>
@@ -58,7 +58,7 @@ export default class SantosContent extends Component {
 						</div>
 
 						<div className="ItemList">
-							<h4>4º Módulo - Set: 06, 07 e 08</h4>
+							<h4>4º Módulo - Ago: 16, 17 e 18</h4>
 							<h5>Lucas Ribeiro</h5>         
 							<p>
 								<b>Prática:</b>Introdução ao Surya Namaskar - Metodologia do Vinyasa e ajustes<br/>
@@ -75,7 +75,7 @@ export default class SantosContent extends Component {
 					{/*******RIGHT COLUMN **********/}
           <Col lg={12}>
 						<div className="ItemList">
-							<h4>5º Módulo - Out: 11, 12 e 13 </h4>
+							<h4>5º Módulo - Set: 27, 28 e 29</h4>
 							<h5>Isabella Pitaki</h5>         
 							<p>
 								Medicina Natural e Ayurveda<br/>
@@ -91,7 +91,7 @@ export default class SantosContent extends Component {
 
 					<Col lg={12}>
 						<div className="ItemList">
-							<h4>6º Módulo - Nov: 15, 16 e 17</h4>
+							<h4>6º Módulo - Out: 18, 19 e 20</h4>
 							<h5>Pedro Franco</h5>
 							<p>
 								Revisão de conteúdo
@@ -103,7 +103,7 @@ export default class SantosContent extends Component {
 					
 					<Col lg={12}>
 						<div className="ItemList">
-							<h4>7º Módulo - Dez: 13, 14 e 15</h4>
+							<h4>7º Módulo - Nov/Dez: 29 e 30/11 a 01/12</h4>
 							<h5>Felipe Peres</h5>
 							<p>
 								Princípios do Ashtanga e Acroyoga
@@ -120,7 +120,7 @@ export default class SantosContent extends Component {
 
 					<Col lg={12}>
 					<div className="ItemList">
-						<h4>8º Módulo - RETIRO - Jan/Fev: 31/01, 1 e 2/02</h4>
+						<h4>8º Módulo - RETIRO - Dez: 13, 14 e 15</h4>
 						<h5>Retiro (valor cobrado à parte)</h5>
 						<p>Apresentação dos trabalhos</p>
 					</div>

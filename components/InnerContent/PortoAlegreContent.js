@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import { Row, Col, Menu, Icon, Dropdown, Button, message } from 'antd';
 
-export default class SantosContent extends Component {
+export default class PortoAlegreContent extends Component {
   render() {
     return (
       <div className="WrapperContent">
         {/*******TITLE AREA**********/}
         <Row>
           <Col lg={24}>
-            <h1 className="Title">Programa Santos</h1>
+            <h1 className="Title">Programa Porto Alegre</h1>
           </Col>
         </Row>
         <Row className="ContentSection">
           {/*******LEFT COLUMN**********/}
           <Col lg={12}>
 						<div className="ItemList">
-							<h4>1º Módulo - Jun: 07, 08 e 09</h4>
+							<h4>1º Módulo - Set: 27, 28 e 29</h4>
 							<h5>Pedro Franco</h5>
 							<ul>
 								<li>Introdução ao Yoga</li>
@@ -30,7 +30,7 @@ export default class SantosContent extends Component {
 						</div>
 
 						<div className="ItemList">
-							<h4>2º Módulo - Jul: 05, 06 e 07</h4>
+							<h4>2º Módulo - Out: 24, 25 e 26</h4>
 							<h5>Pedro Franco</h5>
 							<ul>
 								<li>Yoga Tântrico</li>
@@ -46,7 +46,7 @@ export default class SantosContent extends Component {
 						</div>
 
 						<div className="ItemList">
-							<h4>3º Módulo - Ago: 16, 17 e 18</h4>
+							<h4>3º Módulo - Nov: 22, 23 e 24</h4>
 							<h5>Teo Balieiro e Re Kerlakhian</h5>
 							<ul>
 								<li>Bhakti Yoga Iniciação a musicalidade - mantras</li>
@@ -147,17 +147,18 @@ export default class SantosContent extends Component {
           }
 					.ContentSection{
 						padding: 50px 0;
+					
 					}
 					.ContentSection .ItemList{
 						margin-bottom: 34px;
 						font-family: 'Candara';
+						src: url('../static/fonts/Candara.woff') format('woff');
 					}
 					.ContentSection .ItemList h4{
 						color: #212121;
 						font-weight: bold;
 						font-size: 18px;
 						font-family: 'Candara';
-						src: url('../static/fonts/Candara.woff') format('woff');
 					}
 					.ContentSection .ItemList h5{
 						color: #3d3d3d;

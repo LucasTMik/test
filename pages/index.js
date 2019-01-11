@@ -72,7 +72,7 @@ class index extends Component {
               Acessar Conteúdo
             </Button>
           </Form.Item>
-          <style jsx global>{`
+          <style jsx global>{`          
             body {
               display: flex;
               align-items: center;
