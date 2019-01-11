@@ -8,7 +8,7 @@ export default class RiodeJaneiroContent extends Component {
         {/*******TITLE AREA**********/}
         <Row>
           <Col lg={24}>
-            <h1 className="Title">Programa Rio de janeiro</h1>
+            <h1 className="Title">Programa Rio de Janeiro</h1>
           </Col>
         </Row>
         <Row className="ContentSection">
