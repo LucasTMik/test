@@ -4,8 +4,20 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "heroku-postbuild": "npm run build"
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "yarn build"
+  },
+  "engines": {
+	"node": "10"
+  },
+  "repository": {
+	  "type": "git",
+	  "url": "git+https://https://github.com/d-vida/premananda-area-aluno"
+  },
+  "keywords": {
+	  "react",
+	  "ssr",
+	  "server-side-rendering"
   },
   "dependencies": {
     "@babel/plugin-proposal-decorators": "^7.1.0",
